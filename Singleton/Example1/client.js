@@ -1,0 +1,10 @@
+const {Singleton}  = require('./implementation')
+const s1 = new Singleton()
+const s2 = new Singleton()
+
+if(s1 === s2)console.log("Both of these has the same instance ")
+s1.setSingletonData('hello')
+s1.setSingletonData('world')
+s2.setSingletonData('!')
+console.log(s2.getSingletonData())
+console.log(s1.getSingletonData())
