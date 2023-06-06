@@ -14,7 +14,7 @@ class BubbleSortFactory extends SortFactory {
   }
 }
 class Sort {
-  sort() {
+  sort(array) {
     throw new Error("This must be implemented!");
   }
 }
